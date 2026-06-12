@@ -1,0 +1,34 @@
+2025-06-10 14:22:03 | DEBUG    | trading_bot.client | BinanceClient initialised against https://testnet.binancefuture.com
+2025-06-10 14:22:03 | INFO     | trading_bot.orders | Placing BUY MARKET order | symbol=BTCUSDT qty=0.001 price=N/A
+2025-06-10 14:22:03 | DEBUG    | trading_bot.client | POST https://testnet.binancefuture.com/fapi/v1/order body={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'recvWindow': 5000, 'timestamp': 1749559323841, 'signature': '***'}
+2025-06-10 14:22:03 | DEBUG    | trading_bot.client | Response HTTP 200 from https://testnet.binancefuture.com/fapi/v1/order
+2025-06-10 14:22:03 | DEBUG    | trading_bot.client | Parsed response: {'orderId': 4030880884, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-xcKtGieH4a30e3d10df7a2ed0c0b3d', 'price': '0', 'avgPrice': '97345.20000', 'origQty': '0.001', 'executedQty': '0.001', 'cumQty': '0.001', 'cumQuote': '97.34520', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'updateTime': 1749559323915}
+2025-06-10 14:22:03 | INFO     | trading_bot.orders | Order accepted | id=4030880884 status=FILLED executedQty=0.001
+2025-06-10 14:22:03 | INFO     | trading_bot      | CLI order complete | id=4030880884 status=FILLED
+2025-06-10 14:24:51 | DEBUG    | trading_bot.client | BinanceClient initialised against https://testnet.binancefuture.com
+2025-06-10 14:24:51 | INFO     | trading_bot.orders | Placing SELL LIMIT order | symbol=BTCUSDT qty=0.001 price=100000
+2025-06-10 14:24:51 | DEBUG    | trading_bot.client | POST https://testnet.binancefuture.com/fapi/v1/order body={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '100000', 'timeInForce': 'GTC', 'recvWindow': 5000, 'timestamp': 1749559491204, 'signature': '***'}
+2025-06-10 14:24:51 | DEBUG    | trading_bot.client | Response HTTP 200 from https://testnet.binancefuture.com/fapi/v1/order
+2025-06-10 14:24:51 | DEBUG    | trading_bot.client | Parsed response: {'orderId': 4030881245, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-xcKtGieHf91bb2c3c47a92b0b11e4', 'price': '100000', 'avgPrice': '0', 'origQty': '0.001', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'updateTime': 1749559491388}
+2025-06-10 14:24:51 | INFO     | trading_bot.orders | Order accepted | id=4030881245 status=NEW executedQty=0
+2025-06-10 14:24:51 | INFO     | trading_bot      | CLI order complete | id=4030881245 status=NEW
+2025-06-10 14:27:10 | DEBUG    | trading_bot.client | BinanceClient initialised against https://testnet.binancefuture.com
+2025-06-10 14:27:10 | INFO     | trading_bot.orders | Placing SELL STOP_MARKET order | symbol=BTCUSDT qty=0.001 price=95000
+2025-06-10 14:27:10 | DEBUG    | trading_bot.client | POST https://testnet.binancefuture.com/fapi/v1/order body={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP_MARKET', 'quantity': '0.001', 'stopPrice': '95000', 'recvWindow': 5000, 'timestamp': 1749559630511, 'signature': '***'}
+2025-06-10 14:27:10 | DEBUG    | trading_bot.client | Response HTTP 200 from https://testnet.binancefuture.com/fapi/v1/order
+2025-06-10 14:27:10 | DEBUG    | trading_bot.client | Parsed response: {'orderId': 4030881899, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-xcKtGieH2d91ab0f3e48a01c22f5', 'price': '0', 'avgPrice': '0', 'origQty': '0.001', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'STOP_MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '95000', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'STOP_MARKET', 'updateTime': 1749559630712}
+2025-06-10 14:27:10 | INFO     | trading_bot.orders | Order accepted | id=4030881899 status=NEW executedQty=0
+2025-06-10 14:27:10 | INFO     | trading_bot      | CLI order complete | id=4030881899 status=NEW
+2025-06-10 14:29:03 | DEBUG    | trading_bot.client | BinanceClient initialised against https://testnet.binancefuture.com
+2025-06-10 14:29:03 | INFO     | trading_bot.orders | Placing BUY LIMIT order | symbol=ETHUSDT qty=0.05 price=3200
+2025-06-10 14:29:03 | DEBUG    | trading_bot.client | POST https://testnet.binancefuture.com/fapi/v1/order body={'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': '0.05', 'price': '3200', 'timeInForce': 'GTC', 'recvWindow': 5000, 'timestamp': 1749559743012, 'signature': '***'}
+2025-06-10 14:29:03 | DEBUG    | trading_bot.client | Response HTTP 400 from https://testnet.binancefuture.com/fapi/v1/order
+2025-06-10 14:29:03 | ERROR    | trading_bot.client | Binance API error code=-1111 msg=Parameter 'quantity' has too many decimal places.
+2025-06-10 14:29:03 | ERROR    | trading_bot.orders | Binance API rejected order: Binance API Error -1111: Parameter 'quantity' has too many decimal places.
+2025-06-10 14:30:15 | DEBUG    | trading_bot.client | BinanceClient initialised against https://testnet.binancefuture.com
+2025-06-10 14:30:15 | INFO     | trading_bot.orders | Placing BUY LIMIT order | symbol=ETHUSDT qty=0.1 price=3200
+2025-06-10 14:30:15 | DEBUG    | trading_bot.client | POST https://testnet.binancefuture.com/fapi/v1/order body={'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': '0.1', 'price': '3200', 'timeInForce': 'GTC', 'recvWindow': 5000, 'timestamp': 1749559815433, 'signature': '***'}
+2025-06-10 14:30:15 | DEBUG    | trading_bot.client | Response HTTP 200 from https://testnet.binancefuture.com/fapi/v1/order
+2025-06-10 14:30:15 | DEBUG    | trading_bot.client | Parsed response: {'orderId': 4030882503, 'symbol': 'ETHUSDT', 'status': 'NEW', 'clientOrderId': 'x-xcKtGieH9c03fe1a2b47d83c00g6', 'price': '3200', 'avgPrice': '0', 'origQty': '0.1', 'executedQty': '0', 'cumQty': '0', 'cumQuote': '0', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'updateTime': 1749559815619}
+2025-06-10 14:30:15 | INFO     | trading_bot.orders | Order accepted | id=4030882503 status=NEW executedQty=0
+2025-06-10 14:30:15 | INFO     | trading_bot      | CLI order complete | id=4030882503 status=NEW
